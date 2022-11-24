@@ -237,3 +237,20 @@
             }
         }
         ```
+-   **options**
+    -   Available Options
+        -   buildDiscarder  
+            ex: options { buildDiscarder(logRotator(numToKeepStr: '1')) }
+        -   checkoutToSubdirectory  
+            ex: options { checkoutToSubdirectory('foo') }
+        -   disableConcurrentBuilds  
+            ex: options { disableConcurrentBuilds() }
+        -   disableResume  
+            ex: options { disableResume() }
+        -   newContainerPerStage
+        -   overrideIndexTriggers
+        -   preserveStashes  
+            ex: options { preserveStashes() }  
+            ex: options { preserveStashes(buildCount: 5) }
+        -   quietPeriod  
+            ex: options { quietPeriod(30) }
